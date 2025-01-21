@@ -36,7 +36,7 @@ export default function AddProduct({
   const addProduct = () => {
     console.log("Adding product with details:", product); // Debugging log to check product state
 
-    fetch("http://localhost:4000/api/product/add", {
+    fetch("https://inventory-app-using-mern-stack-13.onrender.com/api/product/add", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

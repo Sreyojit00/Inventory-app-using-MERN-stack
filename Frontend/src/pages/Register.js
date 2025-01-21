@@ -23,7 +23,7 @@ function Register() {
   // Register User
   const registerUser = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/register", {
+      const response = await fetch("https://inventory-app-using-mern-stack-13.onrender.com/api/register", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

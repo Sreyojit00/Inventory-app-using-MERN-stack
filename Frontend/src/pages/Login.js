@@ -21,7 +21,7 @@ function Login() {
 
   const authCheck = () => {
     setTimeout(() => {
-      fetch("http://localhost:4000/api/login")
+      fetch("https://inventory-app-using-mern-stack-13.onrender.com/api/login")
         .then((response) => {
           if (!response.ok) {
             throw new Error("Login failed");
