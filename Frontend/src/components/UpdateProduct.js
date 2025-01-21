@@ -31,7 +31,7 @@ export default function UpdateProduct({
   };
 
   const updateProduct = () => {
-    fetch("http://localhost:4000/api/product/update", {
+    fetch("https://inventory-app-using-mern-stack-13.onrender.com/api/product/update", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

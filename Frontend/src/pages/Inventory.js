@@ -103,7 +103,7 @@ function Inventory() {
   
   const fetchSearchData = async (term) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/product/search?searchTerm=${searchTerm}`);
+      const response = await fetch(`https://inventory-app-using-mern-stack-13.onrender.com/api/product/search?searchTerm=${searchTerm}`);
       if (response.ok) {
         const data = await response.json();
         setAllProducts(data); // Update the products in the UI

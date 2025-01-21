@@ -50,7 +50,7 @@ const BulkUploadProduct = ({ userID, bulkUploadModalSetting, handlePageUpdate })
     
   
       try {
-        const response = await fetch('http://localhost:4000/api/product/bulk-upload', {
+        const response = await fetch('https://inventory-app-using-mern-stack-13.onrender.com/api/product/bulk-upload', {
           method: 'POST',
           body: formData,
         });

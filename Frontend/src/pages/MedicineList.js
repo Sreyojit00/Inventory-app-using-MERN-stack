@@ -18,14 +18,14 @@ function MedicineList() {
 
   const fetchProducts = () => {
     const categoryFilter = selectedCategory === "All" ? "" : `?category=${selectedCategory}`;
-    fetch(`http://localhost:4000/api/product/get${categoryFilter}`)
+    fetch(`https://inventory-app-using-mern-stack-13.onrender.com/api/product/get${categoryFilter}`)
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((err) => console.error(err));
   };
 
   const fetchCategories = () => {
-    fetch(`http://localhost:4000/api/product/categories`)
+    fetch(`https://inventory-app-using-mern-stack-13.onrender.com/api/product/categories`)
       .then((response) => response.json())
       .then((data) => setCategories(["All", ...data]))
       .catch((err) => console.error(err));
@@ -48,7 +48,7 @@ function MedicineList() {
 
   const fetchSearchData = async (term) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/product/search?searchTerm=${term}`);
+      const response = await fetch(`https://inventory-app-using-mern-stack-13.onrender.com/api/product/search?searchTerm=${term}`);
       if (response.ok) {
         const data = await response.json();
         setProducts(data);

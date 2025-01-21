@@ -13,7 +13,7 @@ const AlertPage = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/product/alerts");
+        const response = await fetch("https://inventory-app-using-mern-stack-13.onrender.com/api/product/alerts");
         const data = await response.json();
         if (response.ok) {
           setLowStockProducts(data.lowStock || []);

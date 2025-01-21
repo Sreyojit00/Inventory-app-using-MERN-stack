@@ -32,7 +32,7 @@ const CartPage = () => {
     setTimeout(async () => {
       try {
         // Call the backend to update inventory
-        const response = await fetch("http://localhost:4000/api/update-inventory", {
+        const response = await fetch("https://inventory-app-using-mern-stack-13.onrender.com/api/update-inventory", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -21,7 +21,7 @@ function Login() {
 
   const authCheck = () => {
     setTimeout(() => {
-      fetch("https://inventory-app-using-mern-stack-13.onrender.com/api/login")
+      fetch("http://localhost:4000/api/login")
         .then((response) => {
           if (!response.ok) {
             throw new Error("Login failed");
@@ -63,7 +63,7 @@ function Login() {
     if (form.email === "" || form.password === "") {
       alert("To login user, enter details to proceed...");
     } else {
-      fetch("http://localhost:4000/api/login", {
+      fetch("https://inventory-app-using-mern-stack-13.onrender.com/api/login", {
         method: "POST",
         headers: {
           "Content-type": "application/json",
